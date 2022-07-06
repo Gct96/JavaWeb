@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        //静态注册click事件
+        function clickFun(){
+            alert("静态注册click事件");
+        }
+
+        //动态注册click事件
+        window.onload=function (){
+            var btnObj =document.getElementById("btn01");
+            btnObj.onclick=function () {
+                alert("动态注册click事件");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="clickFun()">按钮1</button>
+    <button id="btn01">按钮2</button>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<!--
+
+    cellsapcing 设置单元格间距
+    align 设置对齐方式
+    tr 行
+    td 列
+    th 加粗居中列
+    ul 无序列表
+    ol 有序列表
+    border 边框
+    colspan 单元格跨列
+    rowspan 单元格跨行
+    iframe 内嵌页面窗口 name属性定义名字，a标签中使用target=name调用
+    form 表单 action 设置提交的服务器地址  method 设置提交的方式（get/post）
+        input type=radio 单选框  name组名 checked默认选中
+        input type=checkbox 复选框
+        select 下拉列表
+        option 选项  selected默认选择
+        textarea 文本框
+        input type=reset 重置按钮
+        input type=submit 提交按钮
+        input type=button 按钮
+        input type=file 文件上传域
+    div 默认独占一行
+    span 长度是封装数据的长度
+    p段落标签 上下方会空一行
+    style 定义css样式代码
+    link 引入css样式代码
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>My html page</title>
+    <style type="text/css">     /* 方法二：style 定义css样式代码  不推荐  */
+        font{
+            border: 1px solid red;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../css/Test.css"/>
+</head>
+<body>
+
+<div>This is a static web page!</div>
+<div id="id002">Welcome to My Web Page!</div>
+<div class="class03">Have a good time!</div>
+
+<p>
+    <a href="www.baidu.com" target="_blank">百度</a>
+    <button onclick="alert('真点是吧？！')">点我</button>
+</p>
+
+<ul>
+    <li>AA</li>
+    <li>BB</li>
+    <li>CC</li>
+    <li>DD</li>
+</ul>
+
+<form action="http:localhost:8080" method="post">
+    <input type="hidden" name="action" value="login">
+    <h1 align="center">用户注册</h1>
+    <table align="center">
+        <tr>
+            <td>用户名称:</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>用户密码:</td>
+            <td><input type="password"/></td>
+        </tr>
+        <tr>
+            <td>确认密码:</td>
+            <td><input type="password"/></td>
+        </tr>
+        <tr>
+            <td>性别:</td>
+            <td><input type="radio" name="sex"/>男<input type="radio" name="sex"/>女</td>
+        </tr>
+        <tr>
+            <td>爱好:</td>
+            <td><input type="checkbox"/>C<input type="checkbox" checked/>Java<input type="checkbox"/>C++</td>
+        </tr>
+        <tr>
+            <td>国籍:</td>
+            <td>
+                <select>
+                    <option>---请选择国籍---</option>
+                    <option selected>中国</option>
+                    <option>美国</option>
+                    <option>英国</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>自我评价:</td>
+            <td><textarea rows="10" cols="20">默认值</textarea></td>
+        </tr>
+        <tr>
+            <td><input type="reset"/></td>
+            <td><input type="submit"/></td>
+        </tr>
+    </table>
+
+
+
+</form><br/>
+
+<table>
+    <tr>
+        <th colspan="2">1.1</th>
+
+        <th rowspan="2">1.3</th>
+    </tr>
+    <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+
+    </tr>
+</table><br/>
+
+<img src="../imgs/jingyi.jpg" width="900" height="700" border="1" alt="未找到图片！"/>
+
+</body>
+</html>

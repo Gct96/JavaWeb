@@ -1,0 +1,48 @@
+div{
+    border: 1px solid green;
+    color:red;
+    font-size: 30px;
+    font-style: italic;
+    width: 200px;
+    height: 100px;
+    margin-left: auto;     /*div块居中*/
+    margin-right: auto;
+    text-align: center;
+}
+
+#id002{
+    border: 1px dashed yellow;
+    color:blue;
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.class03{
+    border: 1px dashed red;
+    color:green;
+    font-size: 10px;
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration:none;
+}
+
+table{
+    border: 1px solid black; /*设置边框*/
+    border-collapse: collapse; /*将边框合并*/
+}
+
+td,th{
+    border: 1px solid black; /*设置边框*/
+}
+
+ul{
+    list-style: none;
+}
