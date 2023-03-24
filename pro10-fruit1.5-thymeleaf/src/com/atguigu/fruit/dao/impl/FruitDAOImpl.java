@@ -5,6 +5,9 @@ import com.atguigu.fruit.pojo.Fruit;
 import com.atguigu.myssm.basedao.BaseDAO;
 import java.util.List;
 
+/**
+ * 完成对数据库的访问任务
+ */
 public class FruitDAOImpl extends BaseDAO<Fruit> implements FruitDAO {
     @Override
     public List<Fruit> getFruitList(String keyword,Integer pageNo) {
